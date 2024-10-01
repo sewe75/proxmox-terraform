@@ -29,7 +29,7 @@ including the versions for each component as of writing this guide.
 |VS Code    |v1.93.1  |[Microsoft](https://code.visualstudio.com/download)|
 |Terraform extension|v2.32.3 |[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)|
 
-### Cloud-init templates
+### Cloud-init images
 As we will use cloud-init to pre-configure our VMs we need to choose a cloud-init-ready image for our Linux distro.  
 While this guide refers to Ubuntu-based images (the other distros have not been tested by me yet), the following table contains some additional sources for cloud-init images of other distros.  
 
