@@ -1,0 +1,6 @@
+pm_host = "<your proxmox hostname or IP address, e.g. pve.home.lab or 10.0.10.100>"
+pm_node_name = "<your proxmox node name, e.g. pve>"
+pm_tls_insecure = true # Set to false if possible (PVE cert signed by trusted CA)
+
+# Set to the template name we specified while creating the template VM
+template_vm_name = "ubuntu-noble-cloud"
