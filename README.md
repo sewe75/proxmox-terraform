@@ -35,16 +35,16 @@ While this guide refers to Ubuntu-based images (the other distros have not been 
 
 | Distro | Release | Codename | Download |
 |--------|---------|----------|----------|
-| <td colspan="2"><strong>Ubuntu</strong> | |
+| <strong>Ubuntu</strong> |
 | Ubuntu | - | - | https://cloud-images.ubuntu.com/ |
 | Ubuntu | 22.04 | jammy | https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img |
 | Ubuntu | 24.04 | noble | https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img |
-| <td colspan="2"><strong>Debian</strong> | |
+| <strong>Debian</strong> |
 | Debian | - | - | https://cloud.debian.org/images/cloud/ |
 | Debian | 10 | buster | https://cloud.debian.org/images/cloud/buster/latest/debian-10-generic-arm64.qcow2 |
 | Debian | 11 | bullseye | https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.qcow2 |
 | Debian | 12 | bookworm | https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2 |
-| <td colspan="2"><strong>Rocky Linux</strong> | |
+| <strong>Rocky Linux</strong> |
 | Rocky  | - | - | https://rockylinux.org/download |
 | Rocky  | 8 | - | https://dl.rockylinux.org/pub/rocky/8/images/x86_64/Rocky-8-GenericCloud-Base.latest.x86_64.qcow2 |
 | Rocky  | 9 | - | https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base.latest.x86_64.qcow2 |
@@ -71,6 +71,11 @@ As this guide is NOT written for PRODUCTION environments, we'll create a token f
 
 ![Add token result](assets/pm_api_add_token_done.png "Result")  
 
+> _These values have to be set later in the `credentials.auto.tfvars` file:_  
+>   
+> "Token ID" -> `pm_api_token_id`  
+> "Secret" -> `pm_api_token_secret`  
+> &nbsp;
 
 ## Create a VM template
 the prerequisits should be in place now so we can start by creating our VM template in Proxmox for use with Terraform.  
