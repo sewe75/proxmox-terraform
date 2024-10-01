@@ -61,7 +61,8 @@ resource "proxmox_vm_qemu" "terraform-test-vm" {
     ciuser      = var.pm_ci_user
     cipassword  = var.pm_ci_password
     sshkeys     = var.pm_ci_sshkeys
-    ciupgrade   = true # Do an automatic package upgrade after the first boot
+
+    ciupgrade   = false # Set to "true" to do an automatic package upgrade after the first boot
 
     # Setup the ip address using cloud-init.
     # Keep in mind to use the CIDR notation as well as adding the gateway if using a static ip.
