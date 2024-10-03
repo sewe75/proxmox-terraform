@@ -442,5 +442,5 @@ This will delete the VM we provisioned using Terraform but not the VM template
 terraform destroy
 ```
 
-# Lincense
+# License
 None - free to use.
